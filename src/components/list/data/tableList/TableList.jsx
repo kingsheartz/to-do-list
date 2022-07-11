@@ -21,25 +21,21 @@ export default function List() {
       if (group === "" || group === "All") {
         //Case 1 : If all groups are selected & default filter
         if (filter === "" || filter === "Default") {
-          alert("case 1")
           setList([]);
           setStrikedList([]);
         }
         //Case 2 : If all groups are selected & set filter Completed
         if (filter === "Completed") {
-          alert("case 2")
           setStrikedList([])
         }
         //Case 3 : If all groups are selected & set filter Incompleted
         if (filter === "Incompleted") {
-          alert("case 3")
           setList([])
         }
       }
       else {
         //Case 4 : If a group is selected & default filter
         if (filter === "" || filter === "Default") {
-          alert("case 4")
           dummyList = [];
           list
             .filter((item => item.group !== group))
@@ -54,7 +50,6 @@ export default function List() {
         }
         //Case 5 : If a group is selected & set filter Completed
         if (filter === "Completed") {
-          alert("case 5")
           dummyList = [];
           strikedList
             .filter((item => item.group !== group))
@@ -63,7 +58,6 @@ export default function List() {
         }
         //Case 6 : If a group is selected & set filter Incompleted
         if (filter === "Incompleted") {
-          alert("case 6")
           dummyList = [];
           list
             .filter((item => item.group !== group))
