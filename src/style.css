@@ -1,0 +1,43 @@
+/* 100% Height x 100% Width */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+/* ToDoList Block */
+.parent {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+}
+
+.child {
+  flex-grow: 1;
+}
+
+.list-items:hover { 
+  background-color: #ddd !important; 
+  text-decoration:line-through !important;
+}
+
+.true{
+  background-color: rgb(111, 111, 111) !important; 
+  text-decoration:line-through;
+}
+
+.title, .group{
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
