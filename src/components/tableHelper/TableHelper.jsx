@@ -49,7 +49,7 @@ export default function TableHelper(props) {
   return (
 
     <Tr theme={theme}
-      className={`list-items ${props.element.isDeleted}`}
+      className={`list-items table-data ${props.element.isDeleted}`}
       isDeleted={props.element.isDeleted}>
       <Td className={"list-item-hover"}
         onClick={setCompleted}>

@@ -123,7 +123,6 @@ export const Th = styled.th`
 padding-top: 12px;
 padding-bottom: 12px;
 text-align: center;
-font-size:15px;
 background-color: ${props => props.theme["th-bg"]};
 color: ${props => props.theme["th-font"]};
 border: 1px solid ${color.gainsboro};
@@ -151,7 +150,6 @@ position:relative;
 export const Td = styled.td`
 border: 1px solid ${color.gainsboro};
 padding: 8px;
-font-size:14px;
 &:nth-child(1){
     width:5%;
 }

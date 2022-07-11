@@ -26,18 +26,47 @@ body {
   flex-grow: 1;
 }
 
-.list-items:hover { 
-  background-color: #ddd !important; 
-  text-decoration:line-through !important;
+.list-items:hover {
+  background-color: #ddd !important;
+  text-decoration: line-through !important;
 }
 
-.true{
-  background-color: rgb(111, 111, 111) !important; 
-  text-decoration:line-through;
+.true {
+  background-color: rgb(111, 111, 111) !important;
+  text-decoration: line-through;
 }
 
-.title, .group{
+.title,
+.group,
+tr {
   word-wrap: break-word;
   overflow-wrap: break-word;
   word-break: break-word;
+}
+
+.table-header {
+  font-size: 15px !important;
+}
+
+.table-data {
+  font-size: 14px !important;
+}
+
+.group-box {
+  font-size: 15px !important;
+}
+
+@media (max-width: 490px) {
+
+  .table-header {
+    font-size: 12px !important;
+  }
+
+  .table-data {
+    font-size: 10px !important;
+  }
+
+  .group-box {
+    font-size: 12px !important;
+  }
 }

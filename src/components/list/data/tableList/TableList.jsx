@@ -77,7 +77,7 @@ export default function List() {
     return (
       <Table theme={theme}>
         <Tbody>
-          <Tr>
+          <Tr className='table-header'>
             <Th theme={theme}>
               <FontAwesomeIcon
                 title="Check or Uncheck"

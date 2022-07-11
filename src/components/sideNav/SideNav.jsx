@@ -11,12 +11,14 @@ export default function SideNav() {
     <SideNavbar>
       {routes.map((route) => (
 
-        <Link to={route.url} style={{
-          color: "white",
-          textDecoration: "none"
-        }}>
+        <Link 
+          key={route.name}
+          to={route.url} 
+          style={{
+            color: "white",
+            textDecoration: "none"
+          }}>
           <NavButton
-            key={route.name}
             currentLocation={location.pathname}
             path={route.url}
             type='button'>

@@ -16,9 +16,10 @@ export default function SearchBox() {
         title="Select Group"
         defaultValue={group}
         type="text"
+        className="group-box"
         onChange={e => setGroup(e.target.value)}
         theme={theme}>
-        <Option value="" disabled={true} theme={theme}>Select Group</Option>  
+        <Option value="" disabled={true} theme={theme}>Select Group</Option>
         <Option value="All" theme={theme}>All</Option>
         <SelectFilter />
       </SearchInputSelect>
